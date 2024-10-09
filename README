@@ -1,1 +1,22 @@
-tienda online
+# Tienda Online - API RESTful en Go
+
+## Descripción
+
+Esta es una API RESTful básica desarrollada en Go para gestionar productos en una tienda en línea. Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en productos y categorías, con una base de datos MySQL para almacenar la información. La API está diseñada para ser usada como backend para aplicaciones web o móviles.
+
+## Estructura del Proyecto
+
+
+## Requisitos Previos
+
+- **Go** (versión 1.19 o superior)
+- **MySQL** (versión 5.7 o superior)
+- **Git** (opcional)
+- **Postman** o cURL para probar los endpoints
+
+## Configuración del Proyecto
+
+1. **Clonar el Repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/tienda-online.git
+   cd tienda-online/back

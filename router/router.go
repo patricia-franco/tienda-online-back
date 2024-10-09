@@ -1,11 +1,19 @@
 package router
 
 import (
-	"github.com/gorilla/mux"
+	"github.com/gin-gonic/gin"
+	"tienda-online-backend/api"
 )
 
-// InitializeRoutes exporta la función para que pueda ser utilizada fuera del paquete `router`
-func InitializeRoutes() *mux.Router {
-	r := mux.NewRouter()
-	return r
+func InitializeRoutes() *gin.Engine {
+	router := gin.Default()
+
+	//Rutas CRUD para productos
+	router.POST("/api/products", api.CreateProduct)
+	router.GET("/api/products", api.GetProducts)
+	router.GET("/api/products/:id", api.GetProductByID)
+	router.PUT("/api/products/:id", api.UpdateProduct)
+	router.DELETE("/api/products/:id", api.DeleteProduct)
+
+	return router
 }
